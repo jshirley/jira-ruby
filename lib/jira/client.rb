@@ -81,6 +81,10 @@ module JIRA
       JIRA::Resource::ProjectFactory.new(self)
     end
 
+    def ProjectCategory # :nodoc:
+      JIRA::Resource::ProjectcategoryFactory.new(self)
+    end
+
     def Issue # :nodoc:
       JIRA::Resource::IssueFactory.new(self)
     end
