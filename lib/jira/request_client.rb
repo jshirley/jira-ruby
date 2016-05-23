@@ -1,7 +1,7 @@
 require 'oauth'
 require 'json'
 require 'net/https'
-#require 'pry'
+require 'pry'
 
 module JIRA
   class RequestClient

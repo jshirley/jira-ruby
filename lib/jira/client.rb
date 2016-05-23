@@ -77,6 +77,10 @@ module JIRA
       @cache = OpenStruct.new
     end
 
+    def Group # :nodoc:
+      JIRA::Resource::GroupFactory.new(self)
+    end
+
     def Project # :nodoc:
       JIRA::Resource::ProjectFactory.new(self)
     end
